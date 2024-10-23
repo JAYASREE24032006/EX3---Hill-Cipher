@@ -1,8 +1,9 @@
 # EX3 - HILL CIPHER
 ## AIM :
 To implement a program to encrypt a plain text and decrypt a cipher text using Hill Cipher substitution technique.
-
-## DESIGN STEPS :
+## THEORY :
+The Hill cipher is a polygraphic substitution cipher that encrypts blocks of plaintext using linear algebra. By representing letters as numerical vectors and applying an invertible key matrix, it produces ciphertext. This method enhances security over simple ciphers but is vulnerable to known-plaintext attacks and requires careful key management.
+## ALGORITHM :
 ### STEP 1 :
 Design of Hill Cipher algorithnm
 
@@ -11,9 +12,6 @@ Implementation using C or pyhton code
 
 ### STEP 3 :
 Testing algorithm with different key values. 
-
-## ALGORITHM DESCRIPTION : 
-The Hill cipher is a substitution cipher invented by Lester S. Hill in 1929. Each letter is represented by a number modulo 26. To encrypt a message, each block of n letters is multiplied by an invertible n × n matrix, again modulus 26. To decrypt the message, each block is multiplied by the inverse of the matrix used for encryption. The matrix used for encryption is the cipher key, and it should be chosen randomly from the set of invertible n × n matrices (modulo 26). The cipher can, be adapted to an alphabet with any number of letters. All arithmetic just needs to be done modulo the number of letters instead of modulo 26.
 
 ## PROGRAM :
 ```
